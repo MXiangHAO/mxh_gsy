@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@drawable/login"> <!-- 设置背景图片 -->
+
+    <!-- 账号输入框 -->
+    <!-- 设置文字颜色 -->
+
+    <!-- 密码输入框 -->
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:hint="手机号/邮箱号"
+        android:minHeight="48dp"
+        android:textColor="@android:color/holo_blue_light" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginBottom="8dp"
+        android:inputType="textPassword"
+        android:hint="输入密码"
+        android:background="@android:color/transparent"
+        android:minHeight="48dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_light"/> <!-- 设置文字颜色 -->
+
+    <!-- 登录按钮 -->
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="16dp"
+        android:text="登录"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_light"/> <!-- 设置文字颜色 -->
+
+    <!-- 注册按钮 -->
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginTop="8dp"
+        android:text="注册"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:textColor="@android:color/holo_blue_light"/> <!-- 设置文字颜色 -->
+
+    <!-- 找回密码按钮 -->
+    <Button
+        android:id="@+id/forget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_marginTop="13dp"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:text="找回密码"
+        android:textColor="@android:color/holo_blue_light" /> <!-- 设置文字颜色 -->
+
+</RelativeLayout>
